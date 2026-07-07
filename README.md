@@ -22,7 +22,7 @@ Sebelum analisis dilakukan, dataset melalui tahap *data cleaning* intensif untuk
 * **Inconsistent Text Fix:** Menyamakan variasi *typo* teks pada lokasi cabang dan tipe order.
 * **Outlier Removal:** Menyaring anomali kuantitas pembelian (seperti nilai minus atau angka input eror `99`).
 
-*Library yang digunakan:* `pandas`, `numpy`, `matplotlib`, `seaborn`.
+*Library yang digunakan:* `pandas`, `matplotlib`, `seaborn`.
 
 ---
 
@@ -30,6 +30,7 @@ Sebelum analisis dilakukan, dataset melalui tahap *data cleaning* intensif untuk
 
 ### 1. Tren Penjualan Bulanan (Stagnan)
 Tingkat pertumbuhan omzet bulanan cenderung datar dengan fluktuasi di bawah 5%. Ini mengonfirmasi bahwa kapasitas operasional kedai saat ini telah mencapai titik jenuh (*saturation point*).
+
 
 ### 2. Analisis Hari Sibuk (Jumat - Minggu)
 Lebih dari **60% total transaksi dalam seminggu menumpuk di hari Jumat, Sabtu, dan Minggu**. Menyamaratakan suplai bahan baku di hari kerja (Senin-Kamis) adalah penyebab utama kerugian operasional.
@@ -48,8 +49,6 @@ Melalui visualisasi *Heatmap Multi-Faceted*, ditemukan pola lonjakan transaksi e
 ## 🖥️ Interactive Sales Dashboard (Tableau)
 Untuk melengkapi analisis operasional ini, saya juga membangun sebuah dashboard interaktif menggunakan **Tableau Public** untuk memantau performa penjualan secara menyeluruh (*macro-level business performance*). 
 
-Dashboard ini mencakup pelacakan metrik utama seperti tren pendapatan harian, kontribusi kategori produk (Coffee vs Non-Coffee), serta demografi transaksi pelanggan.
-
 👉 **[Klik di sini untuk mengakses Tableau Dashboard Interaktif](https://public.tableau.com/shared/NGC76SMC2?:display_count=n&:origin=viz_share_link)**
 
 ---
@@ -57,7 +56,7 @@ Dashboard ini mencakup pelacakan metrik utama seperti tren pendapatan harian, ko
 Berdasarkan temuan data, rekomendasi taktis yang diajukan kepada Owner Aroma Jaya adalah:
 
 1. **Dynamic Stock Allocation:** Menurunkan suplai bahan baku sebesar 35% pada hari Senin-Kamis, dan mengalokasikan anggarannya untuk memperkuat stok menu cepat saji di hari Jumat-Minggu.
-2. **Agile Shifting Staff:** Menerapkan jadwal kerja dinamis dengan menempatkan kapasitas penuh tim (*Full Team*) hanya pada jendela jam sibuk (Jumat siang & Weekend sore).
+2. **Agile Shifting Staff:** Menerapkan jadwal kerja dinamis dengan menempatkan kapasitas penuh tim (*Full Team*) hanya pada jam sibuk (Jumat & Weekend sore).
 3. **Pre-Order & Bypass System:** Menyediakan jalur antrean khusus atau sistem QR-code/WhatsApp *Pre-Order* untuk pelanggan *Takeaway* guna memecah *bottleneck* di kasir utama pada jam-jam kritis.
 
 ---
@@ -65,9 +64,11 @@ Berdasarkan temuan data, rekomendasi taktis yang diajukan kepada Owner Aroma Jay
 ## 📁 Repository Structure
 ```text
 ├── dataset/
-│   └── kopi_srawung_dirty_6months.csv  # Dataset mentah sebelum dibersihkan
+│   └── dataset_pos_aromajaya.csv      # Dataset mentah sebelum dibersihkan
+│   └── cleaned_data.csv               # Dataset sesudah dibersihkan
 ├── notebooks/
-│   └── EDA.ipynb                       # Notebook proses Cleaning & Visualisasi
+│   └── data_preparation.ipynb          # Notebook proses Cleaning
+│   └── eda.ipynb                       # Notebook proses EDA & Visualisasi
 ├── reports/
-│   └── LAPORAN ANALISIS OPERASIONAL.pdf # Laporan resmi format bisnis (PDF)
+│   └── laporan_analisis_operasional.pdf # Laporan bisnis (PDF)
 └── README.md                           # Ringkasan proyek
