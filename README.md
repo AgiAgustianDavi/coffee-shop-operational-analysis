@@ -3,6 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-Data%20Cleaning-orange.svg)](https://pandas.pydata.org/)
 [![Seaborn](https://img.shields.io/badge/Seaborn-Data%20Visualization-green.svg)](https://seaborn.pydata.org/)
+[![Tableau](https://img.shields.io/badge/Tableau-Interactive%20Dashboard-hex%20#E97627.svg?style=flat&logo=Tableau&logoColor=white)](https://public.tableau.com/shared/NGC76SMC2?:display_count=n&:origin=viz_share_link)
 
 ## 📌 Business Scenario & Problem Statement
 Owner Kedai Kopi **Aroma Jaya (Cabang Sudirman)** menghadapi anomali operasional yang serius: secara visual terjadi **antrean pelanggan yang sangat panjang**, namun **pendapatan cabang stagnan** (sama seperti hari biasa). Di sisi lain, manajemen telah menyetok banyak bahan baku segar berdasarkan asumsi keramaian tersebut, yang berujung pada kerugian akibat penumpukan stok (*deadstock/spoilage*).
@@ -44,6 +45,14 @@ Melalui visualisasi *Heatmap Multi-Faceted*, ditemukan pola lonjakan transaksi e
 
 ---
 
+## 🖥️ Interactive Sales Dashboard (Tableau)
+Untuk melengkapi analisis operasional ini, saya juga membangun sebuah dashboard interaktif menggunakan **Tableau Public** untuk memantau performa penjualan secara menyeluruh (*macro-level business performance*). 
+
+Dashboard ini mencakup pelacakan metrik utama seperti tren pendapatan harian, kontribusi kategori produk (Coffee vs Non-Coffee), serta demografi transaksi pelanggan.
+
+👉 **[Klik di sini untuk mengakses Tableau Dashboard Interaktif](https://public.tableau.com/shared/NGC76SMC2?:display_count=n&:origin=viz_share_link)**
+
+---
 ## 💡 Actionable Recommendations
 Berdasarkan temuan data, rekomendasi taktis yang diajukan kepada Owner Aroma Jaya adalah:
 
