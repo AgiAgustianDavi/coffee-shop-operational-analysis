@@ -69,6 +69,7 @@ Kepadatan transaksi per jam menunjukkan konsistensi pola yang sangat tebal di se
 ![](just_support_images/hour_busy.png)
 
 Visualisasi *Heatmap* di bawah menunjukkan stabilitas struktur jam sibuk yang konsisten mengalir dari bulan Januari hingga Juni:
+
 ![](just_support_images/hour_busy_months.png)
 
 > 💡 **Akar Masalah:** Antrean panjang bersifat semu secara finansial. Kapasitas operasional (mesin espresso, kecepatan barista, dan kasir) mengalami *overload* parah hanya pada jam-jam kritis tersebut, memicu tingginya angka pembatalan pesanan (*customer drop-off*). Sebaliknya, di luar jam tersebut kedai cenderung sepi dan aset operasional menganggur (*idle*).
