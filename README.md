@@ -5,7 +5,7 @@
 [![Seaborn](https://img.shields.io/badge/Seaborn-Data%20Visualization-green.svg)](https://seaborn.pydata.org/)
 [![Tableau](https://img.shields.io/badge/Tableau-Interactive%20Dashboard-hex%20#E97627.svg?style=flat&logo=Tableau&logoColor=white)](https://public.tableau.com/shared/NGC76SMC2?:display_count=n&:origin=viz_share_link)
 
-## 📌 Business Scenario & Problem Statement Executive Summary
+## 📌Executive Summary
 Owner Kedai Kopi **Aroma Jaya (Cabang Sudirman)** menghadapi anomali operasional yang serius: secara visual terjadi **antrean pelanggan yang sangat panjang**, namun **pendapatan bulanan stagnan**. Di sisi lain, manajemen mengalami kerugian akibat penumpukan stok bahan baku (*deadstock*) akibat strategi penyediaan pasokan yang kurang tepat. Berdasarkan analisis data transaksi 6 bulan terakhir, ditemukan tiga temuan utama:
 
 #### 1.	Kecilnya Nilai Keranjang Belanja (Basket Size)
